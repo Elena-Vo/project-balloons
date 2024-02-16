@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #777;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 50px;
+  background-color: white;
+}
+
+.container {
+  background-color: #F7F7F7;
+}
+
+.header {
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  position: relative;
+}
+.header__logo {
+  width: 56px;
+  height: 70px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.header__box {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title-first {
+  color: #FFFFFF;
+  font-family: Roboto sans-serif;
+}
+.title-first__main {
+  display: block;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 9px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  animation-name: leftToRight;
+  animation-duration: 1.7s;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+}
+.title-first__secondary {
+  display: block;
+  font-weight: 100;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 4px;
+  animation-name: RightToLeft;
+  animation-duration: 1.7s;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes RightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=style.css.map */
